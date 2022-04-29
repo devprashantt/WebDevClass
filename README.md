@@ -1,6 +1,6 @@
 # WebDevClass
 Lab Work 1
 
-##OutPut
+## OutPut
 
 https://devprashantt.github.io/WebDevClass/
