@@ -1,0 +1,46 @@
+body {
+    margin: 50px;
+    background-color: #010101;
+    color: white;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.header-box{
+    position: absolute;
+    right: 100px;
+    top: 200px;
+  }
+  
+.header-girl{
+position: absolute;
+right: 89px;
+top: 85px;
+}
+  
+.header-ring{
+position: absolute;
+right: 70px;
+top: 40px;
+}
+
+.header-box-text{
+color: white;
+position: absolute;
+top: 330px;
+right: 155px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.header-box-para{
+color: white;
+position: absolute;
+text-align: center;
+top: 370px;
+right: 139px;
+font-size: 20px;
+}
