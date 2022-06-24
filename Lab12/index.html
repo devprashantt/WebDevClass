@@ -1,29 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Dicee</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+<html>
 
-  </head>
-  <body>
+<head>
+    <script>
+        function fun() {
+            var a = 4; // 'a' is the local variable, created by the fun()  
+            function innerfun() // the innerfun() is the inner function, or a closure  
+            {
+                return a;
+            }
+            return innerfun;
+        }
+        var output = fun();
+        document.write(output());
+        document.write(" ");
+        document.write(output());  
+    </script>
+</head>
 
-    <div class="container">
-      <h1>Refresh Me</h1>
+<body>
 
-      <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="images/dice6.png">
-      </div>
+</body>
 
-    </div>
-
-    <script src="app.js" charset="utf-8"></script>
-
-      </body>
-
-      <footer>
-        www 🎲 sneakypeeks 🎲 com
-      </footer>
-    </html>
+</html>
