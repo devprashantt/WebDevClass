@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square</title>
+</head>
+<body>
+    <h1>
+        Program to find square from 1 to 50 numbers using closure
+    </h1>
+    <script>
+        function one_to_n(n)
+        {
+                function square(a)
+                {
+                    return i*i;
+                }
+                for(var i=1;i<=n;i++)
+                {
+                    var sq = square(i);
+                    document.writeln(i,"*",i,"=",sq,"</br>");
+                }
+        }
+        one_to_n(50);
+        alert("You are printing numbers from 1 to 50");
+       </script>
+</body>
+</html>
