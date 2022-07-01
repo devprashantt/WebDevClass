@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Creating Mailing System</title>
+    <script>
+        function validate() {
+
+            var user = document.getElementById("email").value;
+            var user2 = document.getElementById("email");
+            var record = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (record.test(user)) {
+                alert("done");
+                return true;
+            }
+            else {
+                user2.style.border = "red solid 3px";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="cyan">
+    <center>
+        <h1>Email Registration</h1>
+        <form>
+            <table>
+                <tr>
+                    <input type="text" placeholder="Firstname" maxlength="10">
+                </tr>
+                <br><br>
+                <tr>
+                    <input type="text" placeholder="Lastname" maxlength="10">
+                </tr>
+                <br><br>
+                <tr>
+                    <input type="email" placeholder="officialprashanttt@gmail.com" id="email">
+                </tr>
+                <br><br>
+                <tr>
+                    <input type="password" placeholder="Password">
+                </tr>
+                <br><br>
+                <tr>
+                    <input type="password" placeholder="Confirm">
+                </tr>
+                <br><br>
+                <tr>
+                    <input type="text" placeholder="Contact">
+                </tr>
+                <br><br>
+                <tr>
+                    <label>Gender:</label>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </tr>
+                <br><br>
+                <tr><input type="submit" onclick="validate()" value="Create">
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
